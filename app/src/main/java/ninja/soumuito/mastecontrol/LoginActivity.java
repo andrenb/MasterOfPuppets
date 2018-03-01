@@ -101,7 +101,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-    public void login() {
+  public void login() {
 
         EditText loginPass = findViewById(R.id.loginPass);
         EditText loginEmail = findViewById(R.id.loginEmail);
@@ -132,6 +132,12 @@ public class LoginActivity extends AppCompatActivity {
 
         }
 
+  public void lostPass(){
+
+
+
+
+  }
 
   public void gmaillogin(){
 
@@ -141,7 +147,13 @@ public class LoginActivity extends AppCompatActivity {
 
   }
 
-    public void facelogin(){}
+  public void facelogin(){
+
+
+
+
+
+    }
 
 
 

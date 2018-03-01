@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".SingUpActivity" />
         <activity android:name=".LostPassActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>
