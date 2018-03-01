@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ninja.soumuito.mastecontrol.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Screen"
+        app:layout_constraintBottom_toTopOf="@+id/sview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/sup"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="UP"
+        app:layout_constraintEnd_toStartOf="@+id/sdown"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sdown"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Down"
+        app:layout_constraintBottom_toTopOf="@+id/sview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sup"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/sview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#685f5f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sup" />
+
+
+    <TextView
+        android:id="@+id/windown"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Windonw"
+        app:layout_constraintBottom_toBottomOf="@+id/wview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sview"
+        app:layout_constraintVertical_bias="0" />
+
+    <Button
+        android:id="@+id/wup"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:text="UP"
+        app:layout_constraintEnd_toStartOf="@+id/wdown"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sview" />
+
+    <Button
+        android:id="@+id/wdown"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp"
+        android:text="Down"
+        app:layout_constraintBottom_toTopOf="@+id/wview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wup"
+        app:layout_constraintTop_toBottomOf="@+id/sview" />
+
+    <View
+        android:id="@+id/wview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#685f5f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wup" />
+
+
+    <TextView
+        android:id="@+id/shelf"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Shelf"
+        app:layout_constraintEnd_toStartOf="@+id/sund"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wview" />
+
+
+    <TextView
+        android:id="@+id/sund"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Sund"
+        app:layout_constraintEnd_toStartOf="@+id/other"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shelf"
+        app:layout_constraintTop_toBottomOf="@+id/wview" />
+
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Other"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sund"
+        app:layout_constraintTop_toBottomOf="@+id/wview" />
+
+
+    <Switch
+        android:id="@+id/shelfState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/shview"
+        app:layout_constraintEnd_toStartOf="@+id/soundState"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shelf" />
+
+    <Switch
+        android:id="@+id/soundState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/shview"
+        app:layout_constraintEnd_toStartOf="@+id/otherState"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shelfState"
+        app:layout_constraintTop_toBottomOf="@+id/sund" />
+
+    <Switch
+        android:id="@+id/otherState"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/shview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/soundState"
+        app:layout_constraintTop_toBottomOf="@+id/other" />
+
+    <View
+        android:id="@+id/shview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="80dp"
+        android:background="#685f5f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sund" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="405dp"
+        android:layout_height="198dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/redBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Red"
+            app:layout_constraintBottom_toTopOf="@+id/lampView"
+            app:layout_constraintEnd_toStartOf="@+id/greenBut"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shview" />
+
+        <RadioButton
+            android:id="@+id/greenBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Green"
+            app:layout_constraintBottom_toTopOf="@+id/lampView"
+            app:layout_constraintEnd_toStartOf="@+id/blueBut"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/redBut"
+            app:layout_constraintTop_toBottomOf="@+id/shview" />
+
+        <RadioButton
+            android:id="@+id/blueBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Blue"
+            app:layout_constraintBottom_toTopOf="@+id/lampView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/greenBut"
+            app:layout_constraintTop_toBottomOf="@+id/shview" />
+
+
+        <RadioButton
+            android:id="@+id/mix1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Mix 1"
+            app:layout_constraintEnd_toStartOf="@+id/mix2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+        <RadioButton
+            android:id="@+id/mix2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Mix 2"
+            app:layout_constraintEnd_toStartOf="@+id/mix3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mix1"
+            app:layout_constraintTop_toBottomOf="@+id/greenBut" />
+
+        <RadioButton
+            android:id="@+id/mix3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Mix 3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mix2"
+            app:layout_constraintTop_toBottomOf="@+id/blueBut" />
+        />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Lamp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shview" />
+
+    <View
+        android:id="@+id/lampView"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#685f5f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shview"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+</android.support.constraint.ConstraintLayout>
