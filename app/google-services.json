@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "198121097213",
+    "firebase_url": "https://mastecontrol-d3507.firebaseio.com",
+    "project_id": "mastecontrol-d3507",
+    "storage_bucket": "mastecontrol-d3507.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198121097213:android:e6a3b17a6ca269a6",
+        "android_client_info": {
+          "package_name": "ninja.soumuito.mastecontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198121097213-6n8b335r402cqs7qf317ojqla3kf1921.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja.soumuito.mastecontrol",
+            "certificate_hash": "d48acc678d42b80b0df7bb96a6d34c1199103f83"
+          }
+        },
+        {
+          "client_id": "198121097213-dct5g6651qhomuujc6kqt91tcnp06qvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcWmBhRZB8v1QIp63yf4SSD2hJrwlDD7w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198121097213-dct5g6651qhomuujc6kqt91tcnp06qvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
