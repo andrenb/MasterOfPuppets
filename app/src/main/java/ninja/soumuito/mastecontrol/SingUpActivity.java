@@ -16,6 +16,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.UUID;
 
 public class SingUpActivity extends AppCompatActivity {
 
@@ -40,14 +44,29 @@ public class SingUpActivity extends AppCompatActivity {
         singUp.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            createUser();
+            wireteTest();
 
         }
     });
 
     }
+public void wireteTest() {
+
+        EditText name_text = findViewById(R.id.name_text);
+
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference novoaluno = database.getReference("iesb/alunos/"+ UUID.randomUUID().toString());
 
 
+    novoaluno.child("nome").setValue(name_text.getText().toString());
+    novoaluno.child("matricula").setValue("1234124");
+    novoaluno.child("campus").setValue("sul");
+    novoaluno.child("dt_nasc").setValue("1234412341");
+    novoaluno.child("curso").setValue("Culinaria");
+    novoaluno.child("interece").child("it1").setValue("computa");
+    novoaluno.child("interece").child("it2").setValue("ingles");
+
+    }
 
     public void createUser() {
 

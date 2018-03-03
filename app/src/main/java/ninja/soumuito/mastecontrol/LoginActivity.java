@@ -117,7 +117,7 @@ public class LoginActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 Log.d("AUTH", "signInWithEmail:success");
 
-                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
                                 startActivity(intent);
                             }
                             else {
