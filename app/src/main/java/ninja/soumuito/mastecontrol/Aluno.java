@@ -2,6 +2,7 @@ package ninja.soumuito.mastecontrol;
 
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 /**
  * Created by root on 02/03/18.
@@ -12,7 +13,7 @@ public class Aluno{
     public String matricula;
     public String curso;
     public String campus;
-    //public Array<Interesse> interesses;
+    public ArrayList<Interesse> interesses = new ArrayList<>();
     public String data_nsc;
 
     public String getNome() {
@@ -47,13 +48,13 @@ public class Aluno{
         this.campus = campus;
     }
 
-    //public Array<Interesse> getInteresses() {
-   //     return interesses;
-   // }
+    public ArrayList<Interesse> getInteresses() {
+       return interesses;
+    }
 
- //   public void setInteresses(Array<Interesse> interesses) {
-   //     this.interesses = interesses;
-//
+   public void setInteresses(ArrayList<Interesse> interesses) {
+        this.interesses = interesses;}
+
     public String getData_nsc() {
         return data_nsc;
     }

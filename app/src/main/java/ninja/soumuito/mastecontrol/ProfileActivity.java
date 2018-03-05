@@ -45,7 +45,6 @@ public class ProfileActivity extends AppCompatActivity {
     public void wirete() {
 
         EditText nome = findViewById(R.id.nome);
-
         EditText matricula = findViewById(R.id.matricula);
         EditText curso = findViewById(R.id.curso);
         EditText campus = findViewById(R.id.campus);
@@ -60,18 +59,25 @@ public class ProfileActivity extends AppCompatActivity {
         alunos.campus = campus.getText().toString();
         alunos.data_nsc = data_nsc.getText().toString();
 
-       // alunos.interesses = interesses.getText().toString();
+        String inter = interesses.getText().toString();
+
+        for(String s :inter.split("\n")){
+
+            Interesse it = new Interesse();
+            it.id = UUID.randomUUID().toString();
+            it.tag =s;
+            alunos.interesses.add(it);
+
+        }
+
+
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference novoaluno = database.getReference("iesb/alunos/" + UUID.randomUUID().toString());
+        DatabaseReference novoaluno = database.getReference("iesb/alunos/"
+                + UUID.randomUUID().toString());
 
+        novoaluno.setValue(alunos);
 
-        novoaluno.child("nome").setValue(nome.getText().toString());
-        novoaluno.child("matricula").setValue(matricula.getText().toString());
-        novoaluno.child("curso").setValue(curso.getText().toString());
-        novoaluno.child("campus").setValue(campus.getText().toString());
-        novoaluno.child("data_nsc").setValue(data_nsc.getText().toString());
-        novoaluno.child("interesses").setValue(interesses.getText().toString());
 
 
     }

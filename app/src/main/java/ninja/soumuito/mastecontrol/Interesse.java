@@ -2,15 +2,15 @@ package ninja.soumuito.mastecontrol;
 
 public class Interesse{
 
-public String ip;
+public String id;
 public String tag;
 
-    public String getIp() {
-        return ip;
+    public String getId() {
+        return id;
     }
 
-    public void setIp(String ip) {
-        this.ip = ip;
+    public void setId(String ip) {
+        this.id = id;
     }
 
     public String getTag() {
