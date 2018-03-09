@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MasteControl</string>
+    <string name="app_name">MasterControl</string>
+    <string name="maps_key">AIzaSyDL0VgrLzpDZMqYVOB0amObD4DzsglFM6k</string>
 </resources>
