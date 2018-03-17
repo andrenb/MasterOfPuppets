@@ -51,7 +51,7 @@ public class SingUpActivity extends AppCompatActivity {
                 }
 
                 if (password.length() < 6) {
-                    Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Password too  EASY , minimum 6 characters!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -62,11 +62,9 @@ public class SingUpActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 Toast.makeText(SingUpActivity.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
 
-                                // If sign in fails, display a message to the user. If sign in succeeds
-                                // the auth state listener will be notified and logic to handle the
-                                // signed in user can be handled in the listener.
+
                                 if (!task.isSuccessful()) {
-                                    Toast.makeText(SingUpActivity.this, "Authentication failed." + task.getException(),
+                                    Toast.makeText(SingUpActivity.this, "Authentication failed" + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                 } else {
                                     startActivity(new Intent(SingUpActivity.this, MainActivity.class));
