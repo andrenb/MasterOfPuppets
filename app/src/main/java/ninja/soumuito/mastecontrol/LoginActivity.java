@@ -47,7 +47,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         LoginButton fbButton = findViewById(R.id.fbButton);
-
         callbackManager = CallbackManager.Factory.create();
         fbButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -68,7 +67,6 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
         });
-
         LoginManager.getInstance().registerCallback(callbackManager,
                 new FacebookCallback<LoginResult>() {
                     @Override
@@ -89,7 +87,6 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
-
         LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
 
         mAuth = FirebaseAuth.getInstance();
